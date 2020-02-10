@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+<name replace-wildcards="yes">AirScanning @ %h</name>
+<service>
+<type>_uscan._tcp</type>
+<port>80</port>
+<txt-record>duplex=F</txt-record>
+<txt-record>is=platen</txt-record>
+<txt-record>cs=grayscale,color</txt-record>
+<txt-record>rs=eSCL</txt-record>
+<txt-record>representation=http://raspberrypi.local/images/AirScanIcon2.png</txt-record>
+<txt-record>vers=2.5</txt-record>
+<txt-record>adminurl=http://raspberrypi.local/airscan.php</txt-record>
+<txt-record>note=AirScanning</txt-record>
+<txt-record>pdl=application/octet-stream,image/jpeg,application/pdf</txt-record>
+<txt-record>ty=AirScanning</txt-record>
+<txt-record>txtvers=1</txt-record>
+</service>
+</service-group>
