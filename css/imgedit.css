@@ -1,0 +1,7 @@
+#imageEditor { width:482px; margin:auto; padding:20px; border:1px solid # 4b4b4b; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; background-color:#ababab; } 
+#editorContainer { display:block; width:480px; height:480px; } 
+#editor { display:block; margin:0 20px 20px 0; border:1px solid # 4b4b4b; } 
+#toolbar { display:block; margin:20px 0 0; } 
+#toolbar a { margin-right:10px; outline:none; color:#4b4b4b; } 
+#resizer { border:2px dashed #000; } 
+#tip { padding:5px; margin:0; border:1px solid #000; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; position:absolute; background-color:#fff; background-color:rgba(255,255,255,.3); -moz-box-shadow:1px 1px 1px rgba(0,0,0,0.5); -webkit-box-shadow:1px 1px 1px rgba(0,0,0,0.5); box-shadow:1px 1px 1px rgba(0,0,0,0.5); }

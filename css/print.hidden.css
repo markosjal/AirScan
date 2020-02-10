@@ -1,0 +1,17 @@
+
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+#preview_image {
+/*display: block; */
+width: 4in;
+height: 6in;
+}
+
+
+}
+
+
+

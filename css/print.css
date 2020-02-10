@@ -1,0 +1,280 @@
+@media print {
+
+html {
+display: none
+}
+
+body {
+display: none
+}
+
+a {
+  color: #005580;
+  text-decoration: none;
+}
+a:hover {
+display: none
+}
+a:focus {
+display: none
+}
+
+/* ------------------------------------------------------------------ */
+/* header */
+#page_header {
+display: none
+}
+
+#page_header td {
+display: none
+}
+
+#logo {
+display: none
+}
+
+#header_menu {
+display: none
+}
+
+#header_menu > li {
+display: none
+}
+
+#header_menu a {
+display: none
+}
+
+#language_select {
+display: none
+}
+
+/* ------------------------------------------------------------------ */
+/* body */
+#page_body {
+display: none
+}
+
+#page_body > tbody > tr > td {
+display: none
+}
+
+.input_error {
+display: none
+}
+
+#tab_menu_error_text {
+display: none
+}
+
+#tab_menu_error_button {
+display: none
+}
+
+#tab_preview, #tab_menu{
+display: none
+}
+
+#preview_image {
+display: block;
+width: 80%;
+height: 80%;
+}
+
+#tab_menu_settings {
+display: none
+}
+#tab_menu_settings td {
+display: none;
+}
+#tab_menu_settings .value_column > input[type="text"] {
+display: none
+}
+#tab_menu_settings .value_column > input[type="text"]:focus {
+display: none
+}
+
+#tab_menu_settings #brightness_slider {
+display: none
+}
+#tab_menu_settings #brightness {
+display: none;
+}
+
+#tab_menu_settings #contrast_slider {
+display: none
+}
+#tab_menu_settings #contrast {
+display: none
+}
+
+#tab_menu_settings select {
+display: none
+}
+#tab_menu_settings tr:first-child th{
+display: none
+}
+#tab_menu_settings #scanner_name {
+display: none
+}
+#tab_menu_settings th {
+display: none;
+}
+#tab_menu_settings .value_column {
+display: none
+}
+#tab_menu_settings .unit_column, .unit_spacer {
+display: none
+}
+
+#tab_menu_buttons {
+display: none
+}
+#tab_menu_buttons input {
+display: none
+}
+#tab_menu_buttons input:hover {
+display: none
+}
+
+#tab_menu_buttons input:disabled {
+display: none
+}
+
+#tab_menu_buttons_300 {
+display: none
+}
+#tab_menu_buttons_600 {
+ display: none
+}
+#tab_menu_buttons input + input {
+display: none
+}
+
+#files_table_wrapper {
+display: none
+}
+#files_table_wrapper td {
+display: none
+}
+#files_table_wrapper .ruler {
+display: none
+}
+
+#files_table {
+display: none
+}
+#files_table th {
+display: none
+}
+#files_table td, #files_table th {
+display: none
+}
+#files_table a {
+display: none
+}
+#files_table td a {
+display: none;
+}
+#files_table td input {
+display: none;
+}
+#files_table .file_row_new {
+display: none
+}
+#files_table .file_column_ext {
+  display: none
+}
+#files_table .file_column_size, #files_table .file_column_modtime {
+  display: none
+}
+#files_table .file_column_category {
+  display: none;
+}
+#files_table .file_column_name a {
+display: none;
+}
+#files_table .file_column_name {
+display: none
+}
+#files_table td:not(.file_column_name) a {
+display: none
+} 
+#files_table tr:nth-of-type(odd) {
+display: none
+}
+#files_table tr:hover td {
+display: none
+}
+#files_table tr:hover td a {
+display: none
+}
+/* icons for file types */
+display: none
+
+#file_buttons {
+display: none
+}
+#file_buttons li {
+display: none
+}
+#select_menu_button, #file_delete, #file_download {
+display: none
+
+}
+#file_delete, #file_download {
+display: none
+}
+#select_menu_button:hover, #file_delete:hover, #file_download:hover {
+display: none
+}
+#file_download[disabled] {
+	color: #aaa;
+}display: none
+
+#file_download[disabled]:hover {
+display: none
+}
+#file_download_spinner {
+display: none
+}
+#select_menu_button tr td{
+  padding: 0;
+}
+#select_menu_arrow {
+display: none
+}
+#select_menu_dropdown {
+  display: none
+}
+#select_menu_dropdown li {
+display: none
+}
+/* hide text selection by setting selection background color to white */
+#select_menu_dropdown li::selection {
+display: none
+}
+#select_menu_dropdown li::-moz-selection {
+display: none
+}
+#select_menu_dropdown li:hover {
+display: none
+}
+
+/* ------------------------------------------------------------------ */
+/* footer */
+#page_footer {
+display: none
+}
+
+#page_footer td {
+display: none
+}
+
+/* ------------------------------------------------------------------ */
+.ruler {
+display: none
+}
+
+
+}
