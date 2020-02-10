@@ -92,6 +92,7 @@ run a2enmod rewrite (you may need to run this with sudo)
 reboot the host machine
 Turn on scanner
 Set the host machine to always connect to scanner's wifi with a dedicated wifi adapter. This procedure may vary depending on distro.
+Install Imagemagic if you want conversion features in web GUI.
 
 
 Testing:
