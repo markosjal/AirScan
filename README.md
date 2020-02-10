@@ -45,27 +45,40 @@ The second part of the software is the sane-airscan back-end. You will need to i
 
 
 UNTESTED:
+
 Running parts 1 and 2 on same machine with LOCALHOST connecton
+
 Runnng on other web servers
 
 
 Scanner Supported features/limitations:
+
 Connect only via Wifi.
+
 Mini USB is for charging only.
+
 Should have only one WiFi client connected at a time.
+
 Support jpg scannng only as the output format.
+
 Support only 300 and 600 dpi resolutions
+
 Single sheet feed scanners and there is no real "preview" available.
+
 Micro SD slot on some models is not supported.
 
 
 Using with SANE:
+
 One can choose 300 or 600 dpi resolutons, the only two supported by the scanner.
+
 Conversions to PDF in XSane were somewhat sketchy. This I believe is because XSane uses the size/resolution of the selected platen area and not the actual image.
 
 
-Using with included Web GUI
+Using with included Web GUI:
+
 If imagemagick is installed the Web GUI can create single or Multi page PDFs, image format conversion, rotate, auto-crop, etc. These functions can be slow on Raspberry Pi 2 or 3.
+
 Users have access only to their own scans. There are two authentication methods for the web GUI
 
 
@@ -75,40 +88,69 @@ Users have access only to their own scans. There are two authentication methods 
 
 
 eSCL/AirPrint:
+
 support is not complete. There seem to be some remainng issues scanning from OSX and Mopria Scan. Also there is some tweaking needed still to get PDFs to eSCL/AirScan clients directly.
+
 It seems SimpleScan and XSane give good support for these scanners in SANE with this configuration. The limitations come from the scanner.
 
 
 Installing this software:
+
 Copy all files in webroot to the web root of your web server.
+
 rename htaccess .htaccess
-rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX or other architecture more than likely.
+
+rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also 
+compile a binary for OSX or other architecture more than likely.
+
 Check config.inc.php to ensure the settings match your needs and installation.
+
 Install the lines in config/apache2.conf to your apache2.conf
+
 Confirm the paths are the same as yours n apache2.conf
+
 install the config/uscan.service to /etc/avahi/service 
+
 edit /etc/avahi/service to reflect your host name where it is now raspberrypi.local.
+
 for any PAM authenticated users create ~/Pictures/scans in the users home folder
+
 run a2enmod dir (you may need to run this with sudo)
+
 run a2enmod rewrite (you may need to run this with sudo)
+
 reboot the host machine
+
 Turn on scanner
+
 Set the host machine to always connect to scanner's wifi with a dedicated wifi adapter. This procedure may vary depending on distro.
+
 Install Imagemagic if you want conversion features in web GUI.
 
 
 Testing:
+
 turn on scanner
+
 open in a web browser: http://<IPADDRESS of host>:80
+
 at the login secreen username/password is admin/Teknogeekz
+
 You should land on the user administrator page where you can create text based users, and see users scans.
+
 The software should also allow login with any user credentials on the host system using PAM authentication. You need not use the admin user at all.  
+
 Click on Scan in upper left corner of frame. 
-Check that scanner is shoowinfg as connected
+
+Check that scanner is shoowing as connected in the scan page of web GUI
+
 Insert a page and within several seconds the page should show ready to scan. 
+
 Click scan.
 
 
 If all above tests well and you want SANE support, proceed to:
+
 https://github.com/alexpevzner/sane-airscan  
+
 and install the package found there
