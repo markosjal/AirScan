@@ -51,6 +51,8 @@ Running parts 1 and 2 on same machine with LOCALHOST connecton
 Runnng on other web servers
 
 
+
+
 Scanner Supported features/limitations:
 
 Connect only via Wifi.
@@ -68,11 +70,15 @@ Single sheet feed scanners and there is no real "preview" available.
 Micro SD slot on some models is not supported.
 
 
+
+
 Using with SANE:
 
 One can choose 300 or 600 dpi resolutons, the only two supported by the scanner.
 
 Conversions to PDF in XSane were somewhat sketchy. This I believe is because XSane uses the size/resolution of the selected platen area and not the actual image.
+
+
 
 
 Using with included Web GUI:
@@ -92,6 +98,8 @@ eSCL/AirPrint:
 support is not complete. There seem to be some remainng issues scanning from OSX and Mopria Scan. Also there is some tweaking needed still to get PDFs to eSCL/AirScan clients directly.
 
 It seems SimpleScan and XSane give good support for these scanners in SANE with this configuration. The limitations come from the scanner.
+
+
 
 
 Installing this software:
@@ -128,6 +136,8 @@ Set the host machine to always connect to scanner's wifi with a dedicated wifi a
 Install Imagemagic if you want conversion features in web GUI.
 
 
+
+
 Testing:
 
 turn on scanner
@@ -147,6 +157,8 @@ Check that scanner is shoowing as connected in the scan page of web GUI
 Insert a page and within several seconds the page should show ready to scan. 
 
 Click scan.
+
+
 
 
 If all above tests well and you want SANE support, proceed to:
