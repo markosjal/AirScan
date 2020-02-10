@@ -39,7 +39,7 @@ SANE support is a 2 part process. You will need:
 	https://github.com/alexpevzner/sane-airscan
 
 
-AirScan is a web GUI and eSCL interface for these scanners. It will advertise the scanner as an eSCL scanner on the network and process requests. It was tested entirely under Apache 2.6 and PHP 7 on Ubuntu 16.04 x86_64 and Debian on Raspberry Pi 3 .  It can run on any Linux machine on your local network.  It will provide a web GUI with Scanning to JPG or PDF , even multi-page PDF via the web GUI is available. It will also allow the scanner to be accessed via the second software package listed below, which is a SANE back-end. The files are easily installable either to local machine or server. Most files are simply copied to web root directory, with a few exceptons.
+AirScan is a web GUI and eSCL interface for these scanners. It will advertise the scanner as an eSCL scanner on the network and process requests. It was tested entirely under Apache 2.4 and PHP 7 on Ubuntu 16.04 x86_64 and Debian on Raspberry Pi 3 .  It can run on any Linux machine on your local network.  It will provide a web GUI with Scanning to JPG or PDF , even multi-page PDF via the web GUI is available. It will also allow the scanner to be accessed via the second software package listed below, which is a SANE back-end. The files are easily installable either to local machine or server. Most files are simply copied to web root directory, with a few exceptons.
 You will need on host machine: apache2 , PHP7, avahi-daemon , mod_dir, mod_rewrite, A wired or wireless interface to your LAN (wired recomended) , and an available wireless connection dedicated to connect to the scanner.
 
 
