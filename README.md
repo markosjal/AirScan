@@ -18,8 +18,10 @@ Transcription Patri Kun A4 Wi-Fi Portable Scanner
 
 転写パットリくん A4 Wi-Fiポータブルスキャナー
 
+This software , I felt was not ready for release then I discoverd sane-airscan (https://github.com/alexpevzner/sane-airscan) and found the two to be fully compatible. I felt Linux users may need this , so despite the eSCL/AirScan not being fully functonal from OSX I decided to release it for the benefit of Linux SANE users.
 
-eSCL/AirPrnt is not yet fully functional, however it will get you a scanner GUI from which you can scan with a web browser. Ths software combined with sane-airscan as described below will give you SANE support with this scanner.
+eSCL/AirPrnt is not yet fully functional, however it will get you a scanner GUI from which you can scan with a web browser. Additionally, this software combined with sane-airscan (https://github.com/alexpevzner/sane-airscan) as described below will give you SANE support with this scanner.
+
 
 SANE support is a 2 part process. You will need:
 
