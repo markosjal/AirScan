@@ -18,7 +18,7 @@
 
   	転写パットリくん A4 Wi-Fiポータブルスキャナー
 
-This software , I felt was not ready for release then I discoverd sane-airscan (https://github.com/alexpevzner/sane-airscan) and found the two to be fully compatible. I felt Linux users may need this. Now despite the eSCL/AirScan not being fully functonal from OSX and Mopria I decided to release it for the benefit of Linux SANE users.
+This software , I felt was not ready for release then I discoverd sane-airscan (https://github.com/alexpevzner/sane-airscan) and found the two to be fully compatible. I felt Linux users may need this. Now despite the eSCL/AirScan not being fully functonal from OSX and Mopria I decided to release it for the benefit of Linux SANE users. There remains soe sloppy code and test files, etc. Hopefully over time it will get cleaned up.
 
 This software stand-alone:
 
