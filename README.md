@@ -58,8 +58,11 @@ Conversions to PDF in XSane were somewhat sketchy. This I believe is because XSa
 Using with included Web GUI
 If imagemagick is installed the Web GUI can create single or Multi page PDFs, image format conversion, rotate, auto-crop, etc. These functions can be slow on Raspberry Pi 2 or 3.
 Users have access only to their own scans. There are two authentication methods for the web GUI
-   Text based usernames and passwords generated from the admin logn menu
-   PAM autghentication usng PAM accounts installed on the host machine
+
+
+  Text based usernames and passwords generated from the admin login menu
+
+  PAM authentication usng PAM accounts installed on the host machine
 
 
 eSCL/AirPrint:
