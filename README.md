@@ -23,11 +23,17 @@ This software , I felt was not ready for release then I discoverd sane-airscan (
 This software stand-alone:
 
   	eSCL/AirPrnt functionality for OSX and Mopria is incomplete, however it will get you a scanner GUI from which you can scan with a web browser. 
-
+	
 
 This software with sane-airscan:
 
   	This software combined with sane-airscan (https://github.com/alexpevzner/sane-airscan) as described below will give you SANE support for this scanner.
+
+
+This software with your command line scanner under linux:
+
+	I am interested in anyone who may have created a command line scanner for any scanner not otherwise supported in SANE. As I can fairly easily modify this software to accommodate your comand line scanner.
+
 
 
 SANE support is a 2 part process. You will need:
@@ -39,11 +45,11 @@ SANE support is a 2 part process. You will need:
 	https://github.com/alexpevzner/sane-airscan
 
 
-AirScan is a web GUI and eSCL interface for these scanners. It will advertise the scanner as an eSCL scanner on the network and process requests. It was tested entirely under Apache 2.4 and PHP 7 on Ubuntu 16.04 x86_64 and Debian on Raspberry Pi 3 .  It can run on any Linux machine on your local network.  It will provide a web GUI with Scanning to JPG or PDF , even multi-page PDF via the web GUI is available. It will also allow the scanner to be accessed via the second software package listed below, which is a SANE back-end. The files are easily installable either to local machine or server. Most files are simply copied to web root directory, with a few exceptons.
+AirScan is a web GUI and eSCL interface for these scanners. The host will advertise the scanner as an eSCL scanner on the network and process requests for it , translating scan comands to the scanner. It was tested entirely under Apache 2.4 and PHP 7 on Ubuntu 16.04 x86_64 and Debian on Raspberry Pi 3 .  It can run on any Linux machine on your local network.  It will provides a web GUI with Scanning to JPG or PDF , even multi-page PDF via the web GUI is available. It will also allow the scanner to be accessed via the software package listed below, which is a SANE back-end. The files are easily installable either to local machine or server. Most files are simply copied to web root directory, with a few exceptons.
 You will need on host machine: apache2 , PHP7, avahi-daemon , mod_dir, mod_rewrite, A wired or wireless interface to your LAN (wired recomended) , and an available wireless connection dedicated to connect to the scanner.
 
 
-The second part of the software is the sane-airscan back-end. You will need to install it on the client machine (there are some repos for easy installaton) . Although this was created for accessing eSCL/AirScan protocol scanners, it has been tested as working with the AirScan listed above.
+The second part of the software is the sane-airscan back-end. You will need to install it on the client machine (there are some repos for easy installaton) . Although sane-airscan was created for accessing eSCL/AirScan protocol scanners, it has been tested as working with the AirScan listed above.
 
 
 UNTESTED:
@@ -182,3 +188,11 @@ and install the package found there
 Normal Use
 
 	This web GUI will slow down horriby if too many fles are in the users folders. For this reason, this space should be seen a a temporary area and files should be copied away from these folders. 
+	
+This software was spawned from the code here 
+http://bastel.dyndns.info/~public/s400w/
+http://bastel.duckduckdns.com/~public/s400w/
+now available only as an archive here:
+https://web.archive.org/web/20190125153443/http://bastel.dyndns.info/~public/s400w/
+
+There are three vesions of the binary included. with this code.
