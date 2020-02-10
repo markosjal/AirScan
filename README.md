@@ -86,6 +86,10 @@ Using with SANE:
 Using with included Web GUI:
 
 	If imagemagick is installed the Web GUI can create single or Multi page PDFs, image format conversion, rotate, auto-crop, etc. These functions can be slow on Raspberry Pi 2 or 3.
+	
+	Toast UI mage editor included
+	
+	Copy function
 
 	Users have access only to their own scans. There are two authentication methods for the web GUI
 
