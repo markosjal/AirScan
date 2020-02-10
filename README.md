@@ -50,7 +50,9 @@ UNTESTED:
 
 	Running parts 1 and 2 on same machine with LOCALHOST connecton
 
-	Runnng on other web servers
+	Runnng on web servers other than Apache 2.4
+	
+	PHP versins other than 7.0
 
 
 
