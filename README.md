@@ -126,7 +126,7 @@ Installing this software:
 
 	rename htaccess .htaccess
 
-	rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX or other architecture more than likely.
+	rename the appropriate binary file to s400w, and make it executable. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX or other architecture more than likely.
 
 	Check config.inc.php to ensure the settings match your needs and installation.
 
