@@ -95,6 +95,10 @@ Using with included Web GUI:
 
 	If imagemagick is installed the Web GUI can create single or Multi page PDFs, image format conversion, rotate, auto-crop, etc. These functions can be slow on Raspberry Pi 2 or 3.
 	
+	Web GUI in Spanish or english depending on browser language preference. 
+	
+	language file available for adding your own translation.
+	
 	Toast UI mage editor included
 	
 	Copy function
