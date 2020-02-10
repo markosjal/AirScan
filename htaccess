@@ -1,0 +1,13 @@
+DirectorySlash Off
+
+RewriteEngine On
+
+RewriteRule ^eSCL/ScannerStatus/?$ eSCL/ScannerStatus/index.php [L]
+
+RewriteRule ^eSCL/ScannerCapabilities/?$ eSCL/ScannerCapabilities/index.php [L]
+
+RewriteRule ^eSCL/ScanJobs/?$ eSCL/ScanJobs/index.php [L]
+
+RewriteRule ^eSCL/Scans/?$ eSCL/Scans/index.php [L]
+
+RewriteRule ^eSCL/Scans/NextDocument/?$ eSCL/Scans/NextDocument/index.php [L]
