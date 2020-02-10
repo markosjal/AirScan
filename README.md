@@ -132,6 +132,8 @@ Installing this software:
 
 	run a2enmod rewrite (you may need to run this with sudo)
 
+    	Set appropriate permissins on all files for the web server . In debian/ubuntu you probably want to run sudo chown -r www-data:www-data *
+
 	reboot the host machine
 
 	Turn on scanner
