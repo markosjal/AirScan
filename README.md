@@ -19,9 +19,9 @@ Transcription Patri Kun A4 Wi-Fi Portable Scanner
 転写パットリくん A4 Wi-Fiポータブルスキャナー
 
 
-eSCL/AirPrnt is not yet fully functional, however combined with sane-airscan as described below will give you SANE support.
+eSCL/AirPrnt is not yet fully functional, however it will get you a scanner GUI from which you can scan with a web browser. Ths software combined with sane-airscan as described below will give you SANE support with this scanner.
 
-This support is a 2 part process. You will need:
+SANE support is a 2 part process. You will need:
 
 This version of AirScan
 
@@ -52,7 +52,7 @@ Micro SD slot on some models is not supported.
 
 Using with SANE:
 One can choose 300 or 600 dpi resolutons, the only two supported by the scanner.
-Conversions to PDF in XSane were somewhat sketchy. This I believe is because XSane uses the resolution of the selected platen area and not the actual image.
+Conversions to PDF in XSane were somewhat sketchy. This I believe is because XSane uses the size/resolution of the selected platen area and not the actual image.
 
 
 Using with included Web GUI
@@ -70,10 +70,11 @@ It seems SimpleScan and XSane give good support for these scanners in SANE with 
 Installing this software:
 Copy all files in webroot to the web root of your web server.
 rename htaccess .htaccess
-rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX more than lkely.
-Check config.inc.php to ensure the settings maa2enmodtch your needs and installation.
+rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX or other architecture more than likely.
+Check config.inc.php to ensure the settings match your needs and installation.
 Install the lines in config/apache2.conf to your apache2.conf
-for any PAM users create ~/Pictures/scans
+install the config/uscan.service to /etc/avahi/service 
+for any PAM authenticated users create ~/Pictures/scans in the users home folder
 run a2enmod dir (you may need to run this with sudo)
 run a2enmod rewrite (you may need to run this with sudo)
 reboot the host machine
@@ -89,10 +90,10 @@ You should land on the user administrator page where you can create text based u
 The software should also allow login with any user credentials on the host system using PAM authentication. You need not use the admin user at all.  
 Click on Scan in upper left corner of frame. 
 Check that scanner is shoowinfg as connected
-Insert a page and within several secons the page should show ready to scan. 
+Insert a page and within several seconds the page should show ready to scan. 
 Click scan.
 
 
-For SANE support and if all above tests well , proceed to 
+If all above tests well and you want SANE support, proceed to:
 https://github.com/alexpevzner/sane-airscan  
 and install the package found there
