@@ -1,0 +1,1 @@
+/usr/bin/convert scans/Scan20191216205922Lne.jpg  -background White -gravity center +write info: scans/Scan20191216205922Lne.pdf

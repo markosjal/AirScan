@@ -1,0 +1,1 @@
+airscan.php?mppdf=no&pdfname=&jpgpdf=no&mode=color&resolution=300&deskew=no&autocrop=no&print=no&printscalewidth=100&printscaleheight=100&deltmp=no&image=Scan20200202121758.jpg&pdfres=300&rand=42545

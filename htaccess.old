@@ -1,0 +1,69 @@
+#RewriteEngine On
+#DirectorySlash On
+
+
+
+#DirectoryIndex index.php
+
+#<Directory "/eSCL/ScannerCapabilities">
+#    FallbackResource /eSCL/ScannerCapabilities/index.php
+#</Directory>
+
+#<Directory "/eSCL/ScannerCapabilities">
+#    DirectoryIndex index.php
+#</Directory>
+
+
+
+
+#<Directory "/">
+#    FallbackResource /index.php
+#</Directory>
+
+#<Directory "/">
+#    DirectoryIndex /index.php
+#</Directory>
+
+
+
+
+# DirectorySlash On
+
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^(.*[^/])$ /$1/
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^eSCL/ScannerCapabilities/(.*)$ eSCL/ScannerCapabilities/index.php [L]
+
+
+
+#DirectorySlash on
+
+#<Directory /eSCL/ScannerSettings>
+    DirectoryIndex index.php
+#</Directory>
+
+#<Directory /eSCL/ScannerCapabilities>
+    DirectoryIndex index.php
+#</Directory>
+
+#<Directory /eSCL/ScanJobs>
+    DirectoryIndex index.php
+#</Directory>
+
+
+
+
+
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^(.*[^/])$ /$1/
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^eSCL/(.*)$ eSCL/index.php [L]
+
+#RewriteRule ^eSCL/ScannerCapabilities(.*)$ eSCL/ScannerCapabilities/index.php [L]
+
+#RewriteRule ^eSCL/ScannerStatus(.*)$ eSCL/ScannerStatus/index.php [L]
+
+# RewriteRule ^eSCL/ScanJobs(.*)$ eSCL/ScannerJobs/index.php [L]
+
