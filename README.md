@@ -112,7 +112,7 @@ eSCL/AirPrint:
 
 Installing this software:
 
-	Copy all files in webroot to the web root of your web server.
+	Copy all files to the web root of your web server.
 
 	rename htaccess .htaccess
 
@@ -136,6 +136,8 @@ Installing this software:
 
     	Set appropriate permissins on all files for the web server . In debian/ubuntu you probably want to run sudo chown -r www-data:www-data *
 
+    	delete config folder fromweb server
+	
 	reboot the host machine
 
 	Turn on scanner
