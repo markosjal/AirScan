@@ -85,7 +85,9 @@ rename htaccess .htaccess
 rename the appropriate binary file to s400w,. Binaries included for Raspberry Pi 2/3 , x86_32, and x86_64. You could also compile a binary for OSX or other architecture more than likely.
 Check config.inc.php to ensure the settings match your needs and installation.
 Install the lines in config/apache2.conf to your apache2.conf
+Confirm the paths are the same as yours n apache2.conf
 install the config/uscan.service to /etc/avahi/service 
+edit /etc/avahi/service to reflect your host name where it is now raspberrypi.local.
 for any PAM authenticated users create ~/Pictures/scans in the users home folder
 run a2enmod dir (you may need to run this with sudo)
 run a2enmod rewrite (you may need to run this with sudo)
