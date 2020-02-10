@@ -1,33 +1,31 @@
 # AirScan
 
-eSCL and SANE support for:
+  eSCL and SANE support for:
 
-Century CPS-A4WF
+  Century CPS-A4WF
 
-Halo Magic Scanner
+  Halo Magic Scanner
 
-ION AirCopy
+  ION AirCopy
 
-ION AirCopy E-Post Edition
+  ION AirCopy E-Post Edition
 
-iScan Fly
+  iScan Fly
 
-Mustek iScan Air / S400W
+  Mustek iScan Air / S400W
 
-Transcription Patri Kun A4 Wi-Fi Portable Scanner
+  Transcription Patri Kun A4 Wi-Fi Portable Scanner
 
-転写パットリくん A4 Wi-Fiポータブルスキャナー
+  転写パットリくん A4 Wi-Fiポータブルスキャナー
 
 This software , I felt was not ready for release then I discoverd sane-airscan (https://github.com/alexpevzner/sane-airscan) and found the two to be fully compatible. I felt Linux users may need this. Now despite the eSCL/AirScan not being fully functonal from OSX and Mopria I decided to release it for the benefit of Linux SANE users.
 
 This software stand-alone:
-
-eSCL/AirPrnt functionality for OSX and Mopria is incomplete, however it will get you a scanner GUI from which you can scan with a web browser. 
+  eSCL/AirPrnt functionality for OSX and Mopria is incomplete, however it will get you a scanner GUI from which you can scan with a web browser. 
 
 
 This software with sane-airscan:
-
-This software combined with sane-airscan (https://github.com/alexpevzner/sane-airscan) as described below will give you SANE support for this scanner.
+  This software combined with sane-airscan (https://github.com/alexpevzner/sane-airscan) as described below will give you SANE support for this scanner.
 
 
 SANE support is a 2 part process. You will need:
