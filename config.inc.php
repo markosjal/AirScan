@@ -13,6 +13,8 @@ $root='/var/www/html/';
 $local='.local';
 $hostname=gethostname().$local;
 // no trailing . 
+// Serial Number If more than one instance of this software  on network set a different Serial number here
+$serialnumber='AirScan01234567890';
 //If more than one instance of this software  on network set a different UUID here.
 $uuid='574E4333-4A34-3438-3736-84A93E4FA59A';
 //name for php session
@@ -455,6 +457,10 @@ $abwidthoverride='8.01';
 $abheightoverride='9.32';
 // important 2.54 cm = 1 inch, in case you had forgotten.
 // end copy-print functions
+// options below are not fully implemented
+// below is to enable escl/airscan scanning (includng linux escl) 
+$allowescl='yes';
 //for escl scanning clients if no, all files  deleted immediately , if yes, all saved
-$saveallesclfiles='yes';
+$saveallesclfiles='no';
+$escllang='es';
 ?>
