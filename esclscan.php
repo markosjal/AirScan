@@ -1,5 +1,7 @@
 <?php 
 include_once 'checkstatusescl.php';
+include_once 'config.inc.php';
+
 //$nowscanning='yes';
 /*if ($lastword=='nopaper')
 {
@@ -75,11 +77,11 @@ else
 {
 $resolution=$defaultresolution;
 } 
-echo $scanintent;
+//echo $scanintent;
 
 if ($scanintent=='Preview')
 {
-$copypreview='cp /var/www/html/images/scan.jpg '.$root.'eSCL/Scans/XYZ.jpg';
+$copypreview='cp /var/www/html/images/nopreview.'.$escllang.'.jpg '.$root.'eSCL/Scans/XYZ.jpg';
 shell_exec($copypreview);
 file_put_contents($root.'eSCL/Scans/lastscan.txt', $endtime);
 }
@@ -178,9 +180,14 @@ $starttime=$now+30;
 file_put_contents($root.'eSCL/Scans/lastscan.txt', $starttime); // Sets the Preparing message if queried
 $blackwhitecmd=$imagemagicklocation.' '.$root.'eSCL/Scans/XYZ.jpg -type Grayscale '.$root.'eSCL/Scans/XYZbw.jpg';
 shell_exec('nice -n '.$niceness.' '.$blackwhitecmd);
+if ($scanintent !='Preview')
+{
+shell_exec('rm '.$root.'eSCL/Scans/XYZ.jpg');
+shell_exec('mv '.$root.'eSCL/Scans/XYZbw.jpg '.$root.'eSCL/Scans/XYZ.jpg');
+}
 	if ($format=='image/jpeg')
 	{
-	$newscan='eSCL/Scans/XYZbw.jpg';
+	$newscan='eSCL/Scans/XYZ.jpg';
 	}
 	elseif ($format=='application/pdf')
 	{
@@ -193,7 +200,7 @@ shell_exec('nice -n '.$niceness.' '.$blackwhitecmd);
 		$mkpdfcmd=$imagemagicklocation.' '.$root.'eSCL/Scans/XYZbw.jpg -density '.$xresolution.' -units pixelsperinch -background White -gravity center -extent '.($width*2).'x'.($height*2).' +write info: '.$root.'eSCL/Scans/XYZbw.pdf';
 		}
 	shell_exec('nice -n '.$niceness.' '.$mkpdfcmd);
-	$newscan='eSCL/Scans/XYZbw.pdf';	
+	$newscan='eSCL/Scans/XYZ.pdf';	
 	}
 $now=time();
 $endtime=$now;
