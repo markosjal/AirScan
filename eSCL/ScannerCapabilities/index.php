@@ -20,7 +20,7 @@ else
 }
 if ((trim($lastwordb) !="") && (trim($lastwordb) !=NULL)) 
 {
-$lastwordc='on '.$lastwordb;
+$lastwordc=$lastwordb;
  }
 else 
 {
@@ -28,9 +28,9 @@ $lastwordc='Stopped';
 }
 $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03" xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm" xsi:schemaLocation="http://schemas.hp.com/imaging/escl/2011/05/03 eSCL.xsd">
         <pwg:Version>2.0</pwg:Version>
-	<pwg:MakeAndModel>AirScanning '.$lastwordc.'</pwg:MakeAndModel>
-        <!--<pwg:SerialNumber>'.$lastwordb.'</pwg:SerialNumber>
-        <scan:UUID>'.$uuid.'</scan:UUID>-->
+	<pwg:MakeAndModel>AirScanning@'.$lastwordc.'</pwg:MakeAndModel>
+        <pwg:SerialNumber>'.$serialnumber.'</pwg:SerialNumber>
+        <scan:UUID>'.$uuid.'</scan:UUID>
         <scan:AdminURI>http://'.$hostname.'./airscan.php</scan:AdminURI>
 	<scan:IconURI>http://'.$hostname.'/images/AirScanIcon2.png</scan:IconURI>
         <scan:Platen>
@@ -45,7 +45,7 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
                                         <scan:ColorModes>
                                                 <scan:ColorMode>RGB24</scan:ColorMode>
                                                 <scan:ColorMode>Grayscale8</scan:ColorMode>
-                                                <scan:ColorMode>Binary</scan:ColorMode>
+                                                <!--<scan:ColorMode>Binary</scan:ColorMode>-->
                                         </scan:ColorModes>
                                         <scan:ContentTypes>
                                                 <pwg:ContentType>TextAndPhoto</pwg:ContentType>
@@ -76,6 +76,7 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
                                 </scan:SettingProfile>
                         </scan:SettingProfiles>
                         <scan:SupportedIntents>
+                                <scan:Intent>Preview</scan:Intent>
                                 <scan:Intent>TextAndGraphic</scan:Intent>
                         </scan:SupportedIntents>
                         <scan:MaxOpticalXResolution>600</scan:MaxOpticalXResolution>
@@ -90,7 +91,5 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
                 <scan:ScannerAdminCredentialsSupport>true</scan:ScannerAdminCredentialsSupport>
         </scan:eSCLConfigCap>
 </scan:ScannerCapabilities>';
-
 echo $scannercapabilities;
-
 ?>
