@@ -49,8 +49,15 @@ AirScan is a web GUI and eSCL interface for these scanners. The host will advert
 You will need on host machine: apache2 , PHP7, avahi-daemon , mod_dir, mod_rewrite, A wired or wireless interface to your LAN (wired recomended) , and an available wireless connection dedicated to connect to the scanner.
 
 
-The second part of the software is the sane-airscan back-end. You will need to install it on the client machine (there are some repos for easy installaton) . Although sane-airscan was created for accessing eSCL/AirScan protocol scanners, it has been tested as working with the AirScan listed above.
+The second part of the software is the sane-airscan back-end. You will need to install it on the client machine (Option A)  (there are some repos for easy installaton), or (Option B) on the same machine hosting the scanner and Airascan . (Option C) is that the Scanner Host and user workstation may be the same llinux machine already. Although sane-airscan was created for accessing eSCL/AirScan protocol scanners, it has been tested as working with the AirScan listed above.
 
+Option A would share the scanner from the main host machine to other computers using the eSCL protocol. This is probably the preferred method in a multi-computer environment.
+
+Option B would share the scanner from the primary client machine to other client machines by way of SANE protocol.
+
+Option C is recommended for a single computer
+
+As you can see there are varios options for how to make it all work. Fear not, it is easy.
 
 UNTESTED:
 
