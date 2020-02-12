@@ -54,8 +54,6 @@ The second part of the software is the sane-airscan back-end. You will need to i
 
 UNTESTED:
 
-	Running parts 1 and 2 on same machine with LOCALHOST connecton
-
 	Runnng on web servers other than Apache 2.4
 	
 	PHP versins other than 7.0
