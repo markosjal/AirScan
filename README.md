@@ -199,4 +199,6 @@ http://bastel.duckduckdns.com/~public/s400w/
 now available only as an archive here:
 https://web.archive.org/web/20190125153443/http://bastel.dyndns.info/~public/s400w/
 
-There are three vesions of the binary included. with this code.
+There are three vesions of the binary included. with this code. x86-32, x86-64 and Raspberry P 2/3
+
+GitHub is warning about security issues in the Toast UI image editor. Because this is a LAN App and not run over the nternet , I do not see it as a high priority but will hopefully get the Toast UI iage eitor updated, although I can not guarantee this will fix the vulberabilities. If you are worried about it, you can always delete the Toast UI files.
