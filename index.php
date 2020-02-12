@@ -1,48 +1,20 @@
+<!DOCTYPE html>
 <?php
-include_once '../../phppagestart.php';
-//error_reporting( -1 );
-//ini_set( 'display_errors', 1 );
-$username= $_SESSION['username'];
-
-// The following two lines MUST point to <WEBROOT>/config.inc.php 
-// first how we get back to webroot from ths user../
-$webroot='/var/www/html/';
-include_once($webroot.'config.inc.php');
-include_once($webroot.'lang.php');
-chdir ($webroot);
-$_SESSION['fromuserfolder']='yes';
-$_SESSION['fromuserfilelister']='yes';
-$now = time();
-
-if (($requireauth == 'yes') && ($_SESSION['loggedin'] != 'yes'))
-{
-
-//echo 'excuse 1';
-include_once('deauthorize.php');
-}
-
-if (($requireauth == 'yes') && ($_SESSION['loggedin'] == 'yes') && ($_SESSION['expire'] > $now))//  && ($_SESSION['expire'] > $now))
-{
-include_once('filelister.php');
-}
-
-elseif ($requireauth != 'yes') 
-{
-include_once('filelister.php');
-}
-
-elseif (($requireauth == 'yes') && ($_SESSION['loggedin'] != 'yes'))
-{
-//echo 'excuse 2';
-include_once('deauthorize.php');
-}
-
-elseif (($requireauth == 'yes') && ($_SESSION['expire'] <= $now))
-{
-//echo 'excuse 3';
-include_once('deauthorize.php');
-}
-
+include_once('config.inc.php');
+echo '<html lang="'.$lang.'">';
 ?>
-
-
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="root">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title><?php echo $pagetitle; ?></title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+<meta HTTP-EQUIV="REFRESH" content='0; url=<?php echo $defaultredirecturl;?>'>
+</head>
+<body>
+</body>
+</html>
