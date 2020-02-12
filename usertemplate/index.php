@@ -1,15 +1,15 @@
 <?php
 include_once '../../phppagestart.php';
-// error_reporting( -1 );
-// ini_set( 'display_errors', 1 );
+//error_reporting( -1 );
+//ini_set( 'display_errors', 1 );
 $username= $_SESSION['username'];
 
 // The following two lines MUST point to <WEBROOT>/config.inc.php 
 // first how we get back to webroot from ths user../
-$webroot='../';
+$webroot='/var/www/html/';
 include_once($webroot.'config.inc.php');
 include_once($webroot.'lang.php');
-chdir ($root);
+chdir ($webroot);
 $_SESSION['fromuserfolder']='yes';
 $_SESSION['fromuserfilelister']='yes';
 $now = time();
@@ -44,3 +44,5 @@ include_once('deauthorize.php');
 }
 
 ?>
+
+
