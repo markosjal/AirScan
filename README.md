@@ -153,6 +153,8 @@ Installing this software:
 	Set the host machine to always connect to scanner's wifi with a dedicated wifi adapter. This procedure may vary depending on distro.
 
 	Install Imagemagic if you want conversion features in web GUI.
+	
+	If using Ubuntu with ImageMagick 6.8.9-9 be aware of this: https://askubuntu.com/questions/1081695/error-during-converting-jpg-to-pdf
 
 
 
