@@ -55,6 +55,8 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
                                                 <pwg:DocumentFormat>application/pdf</pwg:DocumentFormat>
                                                 <pwg:DocumentFormat>application/octet-stream</pwg:DocumentFormat>
                                                 <scan:DocumentFormatExt>image/jpeg</scan:DocumentFormatExt>
+						<!--<scan:DocumentFormatExt>image/png</scan:DocumentFormatExt>
+                                                <scan:DocumentFormatExt>image/tiff</scan:DocumentFormatExt>-->
                                                 <scan:DocumentFormatExt>application/pdf</scan:DocumentFormatExt>
                                                 <scan:DocumentFormatExt>application/octet-stream</scan:DocumentFormatExt>
                                         </scan:DocumentFormats>
