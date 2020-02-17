@@ -28,7 +28,7 @@ $lastwordc='Stopped';
 }
 $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scan="http://schemas.hp.com/imaging/escl/2011/05/03" xmlns:pwg="http://www.pwg.org/schemas/2010/12/sm" xsi:schemaLocation="http://schemas.hp.com/imaging/escl/2011/05/03 eSCL.xsd">
         <pwg:Version>2.0</pwg:Version>
-	<pwg:MakeAndModel>AirScan@'.$lastwordc.'</pwg:MakeAndModel>
+	<pwg:MakeAndModel>AirScan</pwg:MakeAndModel>
         <pwg:SerialNumber>'.$serialnumber.'</pwg:SerialNumber>
         <scan:UUID>'.$uuid.'</scan:UUID>
         <scan:AdminURI>http://'.$hostname.'./airscan.php</scan:AdminURI>
