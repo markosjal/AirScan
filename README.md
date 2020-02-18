@@ -11,6 +11,8 @@
   	ION AirCopy E-Post Edition
 
   	iScan Fly
+	
+	Kaiser Baas WiFi Photo & Document Scanner
 
   	Mustek iScan Air / S400W
 
