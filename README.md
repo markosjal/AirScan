@@ -53,7 +53,7 @@ You will need on host machine: apache2 , PHP7, avahi-daemon , mod_dir, mod_rewri
 
 The second part of the software is the sane-airscan back-end. (Option A) You will need to install sane-airscan on all of the client machines   (there are some repos for easy installaton), or (Option B) install sane-airscan on the same machine hosting the scanner and AirScan only . (Option C) is that the Scanner Host and user workstation may be the same linux machine already and sane-airsccan is also installed there.. Although sane-airscan was created for accessing eSCL/AirScan protocol scanners, it has been tested as working with the AirScan listed above.
 
-Option A would share the scanner from the main host machine to other computers using the eSCL protocol. This is probably the preferred method in a multi-computer environmen, unless you already have other SANE shared scanners.
+Option A would share the scanner from the main host machine to other computers using the eSCL protocol. This is probably the preferred method in a multi-computer environment, unless you already have other SANE shared scanners.
 
 Option B would share the scanner from the primary client machine to other client machines by way of SANE protocol.
 
