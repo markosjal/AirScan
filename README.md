@@ -22,12 +22,12 @@
 
 This software , I felt was not ready for release then I discoverd sane-airscan (https://github.com/alexpevzner/sane-airscan) and found the two to be fully compatible. I felt Linux users may need this. Now despite the eSCL/AirScan not being fully functonal from OSX and Mopria I decided to release it for the benefit of Linux SANE users. There remains some sloppy code and test files, etc. Hopefully over time it will get cleaned up.
 
-This software stand-alone:
+This software stand-alone for a web GUI and limited eSCL support:
 
   	eSCL/AirPrnt functionality for OSX and Mopria is incomplete, however it will get you a scanner GUI from which you can scan with a web browser. 
 	
 
-This software with sane-airscan:
+This software with sane-airscan to scan from most any Linux application:
 
   	This software combined with sane-airscan (https://github.com/alexpevzner/sane-airscan) as described below will give you SANE support for this scanner.
 
