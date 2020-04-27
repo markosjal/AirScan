@@ -94,4 +94,5 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
         </scan:eSCLConfigCap>
 </scan:ScannerCapabilities>';
 echo $scannercapabilities;
+
 ?>
