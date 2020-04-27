@@ -30,7 +30,7 @@ $scannercapabilities='<scan:ScannerCapabilities xmlns:xsi="http://www.w3.org/200
         <pwg:Version>2.0</pwg:Version>
 	<pwg:MakeAndModel>AirScan</pwg:MakeAndModel>
         <pwg:SerialNumber>'.$serialnumber.'</pwg:SerialNumber>
-        <scan:UUID>4509a320-00a0-008e-00b6-000507510ecc</scan:UUID>
+        <scan:UUID>'.$uuid.'</scan:UUID>
         <scan:AdminURI>http://'.$hostname.'./airscan.php</scan:AdminURI>
 	<scan:IconURI>http://'.$hostname.'/images/AirScanIcon2.png</scan:IconURI>
         <scan:Platen>
