@@ -15,8 +15,8 @@ $hostname=gethostname().$local;
 // no trailing . 
 // Serial Number If more than one instance of this software  on network set a different Serial number here
 $serialnumber='AirScan01234567890';
-//If more than one instance of this software  on network set a different UUID here.
-$uuid='574E4333-4A34-3438-3736-84A93E4FA59A';
+//If more than one instance of this software  on network set a different UUID here and in the avahi service file.
+$uuid='4509a320-00a0-008e-00b6-000507510ecc';
 //name for php session
 //this was moved to phppagestart.php
 //$sessionname='airscan';
