@@ -15,6 +15,7 @@
 <txt-record>note=AirScan</txt-record>
 <txt-record>pdl=application/octet-stream,image/jpeg,application/pdf</txt-record>
 <txt-record>ty=AirScan</txt-record>
+<txt-record>UUID=4509a320-00a0-008e-00b6-000507510ecc</txt-record>
 <txt-record>txtvers=1</txt-record>
 </service>
 </service-group>
