@@ -1,1 +1,0 @@
-/var/www/html/s400w 192.168.18.33 23 scan 300 scans/Test/Scan20200202121758.jpg
