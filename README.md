@@ -61,6 +61,14 @@ Option C is recommended for a single computer, or sharing exclusively over SANE 
 
 As you can see there are various options for how to make it all work. Fear not, it is easy. I think option A or C are suitable for most environments. On other platforms, Vuescan for Windows, OSX, and Linux can use the scanner installed with option A , B or C becuase in any case the scanner will still advertise as eSCL.
 
+NOTE:
+	It is highly recommended that the host computer (running this software) have a Wirwed LAN connection to the network, and an available Wifi connection to connect to the scanner. 
+	
+	You can run this software with only a single LAN connection (Wifi), however you will not be able to share the scanner and must connect to either your LAN or the scanner. 
+
+
+
+
 UNTESTED:
 
 	Runnng on web servers other than Apache 2.4
