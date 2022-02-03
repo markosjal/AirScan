@@ -1,6 +1,29 @@
 # AirScan
 
-  eSCL and SANE support for:
+ 
+  PLEASE NOTE THIS PROJECT IS BEING MOVED TO http://scannershare.com . I DO NOT UNDERSTAND GITHUB AND PROBABLY NEVER WILL, SO I GIVE UP ON GITHUB
+  
+  THIS PROJECT IS BEING BROKEN INTO 2 PARTS
+  
+  1) GUI for Scanning from a web browser
+  2) eSCL/AirScan interface to scan from MacOS(native scanning), Linux(with SANE-AirScan back-end), Android(Mopria Scan), iOS(AirScanner app) or ChromeOS(Mopria Scan)
+  
+  Part 1 is under reconstruction
+  
+  Part2 is ready for download, and runs on MacOS or Linux.  You can download at scannershare.com but for now there is no direct link so use the contact form at the bottom of the page to requestthe link  until the page is updated. 
+  
+  There will be no future "combined" version however they will both be built and maintained in a way that they can be used and run on the same machine.
+  
+  in short Part 2 makes one of these scanners an eSCL/AirScan compatible Scanner on your network by way of a Mac or Linux computer. You can then make use of whatever scanning app that is in your OS. Linux users will need sane-airscan back-end https://github.com/alexpevzner/sane-airscan. It was tested on OSX10.15 and Ubuntu 10.04. It has not been tested on M1 and may need an M1 specific binary made from bastel source.
+  
+  
+  
+  
+  
+  
+  
+  
+   eSCL and SANE support for:
 
   	Century CPS-A4WF
 
