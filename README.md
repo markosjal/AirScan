@@ -6,11 +6,11 @@
   THIS PROJECT IS BEING BROKEN INTO 2 PARTS
   
   1) GUI for Scanning from a web browser
-  2) eSCL/AirScan interface to scan from MacOS(native scanning), Linux(with SANE-AirScan back-end), Android(Mopria Scan), iOS(AirScanner app) or ChromeOS(Mopria Scan)
+  2) eSCL/AirScan interface to scan from Windows 11, MacOS(native scanning), Linux(with SANE-AirScan back-end), Android(Mopria Scan), iOS(AirScanner app) or ChromeOS(Mopria Scan)
   
-  Part 1 is under reconstruction
+  Part 1 is under reconstruction. It will take some time.
   
-  Part2 is ready for download, and runs on MacOS or Linux.  You can download at scannershare.com but for now there is no direct link so use the contact form at the bottom of the page to requestthe link  until the page is updated. 
+  Part2 is ready for download, and runs on Windows, MacOS or Linux.  You can download at scannershare.com. 
   
   There will be no future "combined" version however they will both be built and maintained in a way that they can be used and run on the same machine.
   
